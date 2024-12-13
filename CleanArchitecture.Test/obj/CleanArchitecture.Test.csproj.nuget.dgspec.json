@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj": {}
+    "C:\\CodigoFuente\\CleanArchitecture\\CleanArchitecture.Test\\CleanArchitecture.Test.csproj": {}
   },
   "projects": {
-    "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj": {
+    "C:\\CodigoFuente\\CleanArchitecture\\CleanArchitecture.Test\\CleanArchitecture.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
-        "projectName": "CleanArchitecture.Domain",
-        "projectPath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+        "projectUniqueName": "C:\\CodigoFuente\\CleanArchitecture\\CleanArchitecture.Test\\CleanArchitecture.Test.csproj",
+        "projectName": "CleanArchitecture.Test",
+        "projectPath": "C:\\CodigoFuente\\CleanArchitecture\\CleanArchitecture.Test\\CleanArchitecture.Test.csproj",
         "packagesPath": "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Domain\\obj\\",
+        "outputPath": "C:\\CodigoFuente\\CleanArchitecture\\CleanArchitecture.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\santiago.rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,12 +45,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "MediatR.Contracts": {
-              "target": "Package",
-              "version": "[2.0.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -63,6 +57,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
