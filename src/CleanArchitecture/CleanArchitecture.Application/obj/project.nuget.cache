@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "AS0VtKJ/Vla6Qk05J76gmAl4bMRaJeFEEBE5kGpqiyGrs1ZymPXsHz1j805jGhvPfw5NlMe0PgvxE9LJh0ceuQ==",
+  "success": true,
+  "projectFilePath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
