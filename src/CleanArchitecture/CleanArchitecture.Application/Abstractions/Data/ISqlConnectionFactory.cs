@@ -7,5 +7,6 @@ namespace CleanArchitecture.Application.Abstractions.Data
     {
         IDbConnection CreateConnection();
 
+
     }
 }
