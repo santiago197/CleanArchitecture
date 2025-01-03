@@ -1,4 +1,5 @@
 ﻿
+using CleanArchitecture.Application.Abstractions.Clock;
 using CleanArchitecture.Application.Abstractions.Messaging;
 using CleanArchitecture.Domain.Abstractions;
 using CleanArchitecture.Domain.Alquileres;
@@ -16,14 +17,16 @@ namespace CleanArchitecture.Application.Alquileres.ReservarAlquiler
         private readonly IAlquilerRepository _alquilerRepository;
         private readonly PrecioService _precioService;
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IDateTimeProvider _dateTimeProvider;
 
-        public ReservarAlquilerCommandHandler(IUserRepository userRepository, IVehiculoRepository vehiculoRepository, IAlquilerRepository alquilerRepository, PrecioService precioService, IUnitOfWork unitOfWork)
+        public ReservarAlquilerCommandHandler(IUserRepository userRepository, IVehiculoRepository vehiculoRepository, IAlquilerRepository alquilerRepository, PrecioService precioService, IUnitOfWork unitOfWork, IDateTimeProvider dateTimeProvider)
         {
             _userRepository = userRepository;
             _vehiculoRepository = vehiculoRepository;
             _alquilerRepository = alquilerRepository;
             _precioService = precioService;
             _unitOfWork = unitOfWork;
+            _dateTimeProvider = dateTimeProvider;
         }
 
         public async Task<Result<Guid>> Handle(ReservarAlquilerCommand request, CancellationToken cancellationToken)
@@ -47,7 +50,7 @@ namespace CleanArchitecture.Application.Alquileres.ReservarAlquiler
                 return Result.Failure<Guid>(AlquilerErrors.Overlap);
             }
 
-            var alquiler =  Alquiler.Reservar(vehiculo, user.Id, duracion, DateTime.UtcNow, _precioService);
+            var alquiler =  Alquiler.Reservar(vehiculo, user.Id, duracion, _dateTimeProvider.currentTime, _precioService);
 
             _alquilerRepository.Add(alquiler);
 
