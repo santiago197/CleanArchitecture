@@ -2,7 +2,7 @@
 
 namespace CleanArchitecture.Application.Abstractions.Clock
 {
-    internal interface IDateTimeProvider
+    public interface IDateTimeProvider
     {
         DateTime currentTime { get; }
     }
