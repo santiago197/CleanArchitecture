@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "EiLbD3oMSB61OCCIeR/GB7vsfv+WT/NXWtYBRUTdK7InlYWdBTjC5M/Yy7ErR/xeoBtWytbV2cE8DgvbUER+0Q==",
+  "dgSpecHash": "/3cHoEece7C5drOZj38aJLQqS6RmvAGLNS9mVmO4Lcy4ygiWTefO+A73FCknbPs5kBErNCJs/YiEWC9fkEsMxw==",
   "success": true,
   "projectFilePath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\dapper\\2.1.15\\dapper.2.1.15.nupkg.sha512",
+    "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
+    "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.8.0\\fluentvalidation.dependencyinjectionextensions.11.8.0.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0-rc.2.23479.6\\microsoft.extensions.dependencyinjection.abstractions.8.0.0-rc.2.23479.6.nupkg.sha512",
