@@ -1,6 +1,7 @@
 ﻿
 using CleanArchitecture.Domain.Alquileres;
 using CleanArchitecture.Domain.Reviews;
+using CleanArchitecture.Domain.Users;
 using CleanArchitecture.Domain.Vehiculos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -28,6 +29,10 @@ namespace CleanArchitecture.Infrastructure.Configuration
             builder.HasOne<Alquiler>()
                 .WithMany()
                 .HasForeignKey(review => review.AlquilerId);
+
+            builder.HasOne<User>()
+                .WithMany()
+                .HasForeignKey(review => review.UserId);
         }
     }
 }
