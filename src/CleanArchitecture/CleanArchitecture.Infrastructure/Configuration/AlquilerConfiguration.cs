@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CleanArchitecture.Infrastructure.Configuration
 {
-    internal sealed class AlquilerConfiguration: IEntityTypeConfiguration<Alquiler>
+    internal sealed class AlquilerConfiguration : IEntityTypeConfiguration<Alquiler>
     {
         public void Configure(EntityTypeBuilder<Alquiler> builder)
         {
-            builder.ToTable("alquires");
+            builder.ToTable("alquileres");
             builder.HasKey(alquiler => alquiler.Id);
 
             builder.OwnsOne(alquiler => alquiler.PrecioPorPeriodo, precioBuilder =>
@@ -20,19 +20,19 @@ namespace CleanArchitecture.Infrastructure.Configuration
                 precioBuilder.Property(precio => precio.TipoMoneda)
                     .HasConversion(tipoMoneda => tipoMoneda.Codigo, codigo => TipoMoneda.FromCodigo(codigo!));
             });
-            
+
             builder.OwnsOne(alquiler => alquiler.Mantenimiento, precioBuilder =>
             {
                 precioBuilder.Property(precio => precio.TipoMoneda)
                     .HasConversion(tipoMoneda => tipoMoneda.Codigo, codigo => TipoMoneda.FromCodigo(codigo!));
             });
-            
+
             builder.OwnsOne(alquiler => alquiler.Accesorios, precioBuilder =>
             {
                 precioBuilder.Property(precio => precio.TipoMoneda)
                     .HasConversion(tipoMoneda => tipoMoneda.Codigo, codigo => TipoMoneda.FromCodigo(codigo!));
             });
-            
+
             builder.OwnsOne(alquiler => alquiler.PrecioTotal, precioBuilder =>
             {
                 precioBuilder.Property(precio => precio.TipoMoneda)

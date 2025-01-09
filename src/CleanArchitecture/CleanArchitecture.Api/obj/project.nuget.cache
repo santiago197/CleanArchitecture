@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NiQybfJgYtvx4IxuQuPckELKu9igS4e2/S7kopVX2OYEupgwg/36GyybxK93M5YHQEqRcG+XdY1UpqLE4ZdNvA==",
+  "dgSpecHash": "BpJrjDsRpvXk80uAlkGRtIvWEnQ7qGSdDNVpYOFC+CHQgjXR+silAyUuPUwEIIOF28TNu390FzKwxCHpzrXcyA==",
   "success": true,
   "projectFilePath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\bogus\\34.0.1\\bogus.34.0.1.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\dapper\\2.1.15\\dapper.2.1.15.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\efcore.namingconventions\\7.0.2\\efcore.namingconventions.7.0.2.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
@@ -56,5 +57,16 @@
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "CleanArchitecture.Api depends on Bogus (>= 34.0.0) but Bogus 34.0.0 was not found. An approximate best match of Bogus 34.0.1 was resolved.",
+      "libraryId": "Bogus",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
