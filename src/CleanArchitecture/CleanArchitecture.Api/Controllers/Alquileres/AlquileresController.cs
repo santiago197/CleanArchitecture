@@ -7,7 +7,7 @@ namespace CleanArchitecture.Api.Controllers.Alquileres
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class AlquileresController  : ControllerBase
+    public class AlquileresController : ControllerBase
     {
         private readonly ISender _sender;
 
@@ -20,7 +20,7 @@ namespace CleanArchitecture.Api.Controllers.Alquileres
         {
             var query = new GetAlquilerQuery(id);
             var resultado = await _sender.Send(query, cancellationToken);
-            
+
             return resultado.IsSuccess ? Ok(resultado.Value) : NotFound();
         }
 
@@ -28,9 +28,9 @@ namespace CleanArchitecture.Api.Controllers.Alquileres
         public async Task<IActionResult> ReservaAlquiler(Guid id, AlquilerReservaRequest request, CancellationToken cancellationToken)
         {
             var command = new ReservarAlquilerCommand(request.VehiculoId, request.UserId, request.StartDate, request.EndDate);
-            var resultado =await _sender.Send(command, cancellationToken);
+            var resultado = await _sender.Send(command, cancellationToken);
 
-            if(resultado.IsFailure)
+            if (resultado.IsFailure)
             {
                 return BadRequest(resultado.Error);
             }

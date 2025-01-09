@@ -5,6 +5,7 @@ namespace CleanArchitecture.Domain.Vehiculos;
 
 public sealed class Vehiculo : Entity
 {
+    private Vehiculo() { }
     public Vehiculo(
         Guid id,
         Modelo modelo,
@@ -25,7 +26,7 @@ public sealed class Vehiculo : Entity
         Direccion = direccion;
     }
     public Modelo? Modelo { get; private set; }
-    public Marca? Marca { get; private set; }
+    public Marca? Marca  { get; private set; }
     public Vin? Vin { get; private set; }
     public Direccion? Direccion { get; private set; }
 

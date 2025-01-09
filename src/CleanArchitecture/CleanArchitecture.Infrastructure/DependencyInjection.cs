@@ -41,6 +41,7 @@ namespace CleanArchitecture.Infrastructure
 
             services.AddSingleton<ISqlConnectionFactory>(_ => new SqlConnectionFactory(connectionString));
 
+
             SqlMapper.AddTypeHandler(new DateOnlyTypeHandler());
 
             return services;

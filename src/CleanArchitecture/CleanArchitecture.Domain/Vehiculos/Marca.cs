@@ -1,4 +1,4 @@
 namespace CleanArchitecture.Domain.Vehiculos
 {
-    public record Marca(string Value);
+    public record Marca(int Id, string Value);
 }

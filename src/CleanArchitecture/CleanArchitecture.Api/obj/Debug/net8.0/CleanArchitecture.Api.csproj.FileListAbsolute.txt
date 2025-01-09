@@ -51,9 +51,14 @@ C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\ob
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CleanArchitecture.Api.props
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net8.0\staticwebassets.pack.json
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net8.0\scopedcss\bundle\CleanArchitecture.Api.styles.css
-C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net8.0\CleanArc.52FC81DF.Up2Date
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net8.0\CleanArchitecture.Api.dll
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net8.0\refint\CleanArchitecture.Api.dll
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net8.0\CleanArchitecture.Api.pdb
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net8.0\CleanArchitecture.Api.genruntimeconfig.cache
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net8.0\ref\CleanArchitecture.Api.dll
+C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\bin\Debug\net8.0\Humanizer.dll
+C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\bin\Debug\net8.0\System.CodeDom.dll
+C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net8.0\CleanArchitecture.Api.csproj.CopyComplete
