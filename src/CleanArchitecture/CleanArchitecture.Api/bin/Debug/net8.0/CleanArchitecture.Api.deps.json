@@ -10,6 +10,7 @@
         "dependencies": {
           "Bogus": "34.0.1",
           "CleanArchitecture.Application": "1.0.0",
+          "CleanArchitecture.Domain": "1.0.0",
           "CleanArchitecture.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.4",
           "Microsoft.EntityFrameworkCore.Design": "7.0.11",

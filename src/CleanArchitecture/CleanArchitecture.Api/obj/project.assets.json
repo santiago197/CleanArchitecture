@@ -2520,6 +2520,7 @@
     "net8.0": [
       "Bogus >= 34.0.0",
       "CleanArchitecture.Application >= 1.0.0",
+      "CleanArchitecture.Domain >= 1.0.0",
       "CleanArchitecture.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11",
@@ -2558,6 +2559,9 @@
             "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj": {
               "projectPath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj"
             },
+            "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj": {
+              "projectPath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj"
+            },
             "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj": {
               "projectPath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj"
             }
@@ -2568,6 +2572,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2627,7 +2636,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "CleanArchitecture.Api depends on Bogus (>= 34.0.0) but Bogus 34.0.0 was not found. An approximate best match of Bogus 34.0.1 was resolved.",
+      "message": "CleanArchitecture.Api depende de Bogus (>= 34.0.0), pero no se encontró Bogus 34.0.0. Se resolvió una mejor coincidencia aproximada de Bogus 34.0.1.",
       "libraryId": "Bogus",
       "targetGraphs": [
         "net8.0"

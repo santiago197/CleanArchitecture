@@ -21,7 +21,7 @@ namespace CleanArchitecture.Application.Vehiculos.SearchVehiculos
 
         public async Task<Result<IReadOnlyList<VehiculoResponse>>> Handle(SearchVehiculosQuery request, CancellationToken cancellationToken)
         {
-            if(request.FechaInicio > request.FechaFin)
+            if (request.FechaInicio > request.FechaFin)
             {
                 return new List<VehiculoResponse>();
             }
@@ -44,7 +44,7 @@ namespace CleanArchitecture.Application.Vehiculos.SearchVehiculos
                     SELECT 1
                     FROM alquileres AS b
                     WHERE b.vehiculo_id = a.id
-                    b.duracion_inicio <= @EndDate 
+                    AND b.duracion_inicio <= @EndDate 
                     AND b.duracion_fin >= @StartDate
                     AND b.status = ANY(@ActiveAlquilerStatuses)
                 )
@@ -64,7 +64,7 @@ namespace CleanArchitecture.Application.Vehiculos.SearchVehiculos
                     ActiveAlquilerStatuses
                 },
                 splitOn: "Pais"
-                ) ;
+                );
 
             return vehiculos.ToList();
 
