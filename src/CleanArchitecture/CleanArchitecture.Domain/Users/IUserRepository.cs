@@ -6,5 +6,6 @@ namespace CleanArchitecture.Domain.Users
     {
         Task<User?> GetByIdAsync(UserId id, CancellationToken cancellationToken = default);
         void Add(User user);
+        Task<User?> GetByEmailAsync(Email Email, CancellationToken cancellationToken = default);
     }
 }

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "MiuSpk81oTIWdPd2xzRYK7tZTQKQOwJWQpck+LZBJA38myUgknBTCw4IjnndCzp6wMKQfvapG2hD0y+Ej4bNpA==",
+  "dgSpecHash": "TR0Z1nn5ICuY3EaJI/LxF+L5xbdhlVFp0oCnFnv+PoXMKz3Y/mIvz42aVZxdWAWjZhvAn1bzzCkId/puicATjw==",
   "success": true,
   "projectFilePath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\dapper\\2.1.15\\dapper.2.1.15.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\efcore.namingconventions\\7.0.2\\efcore.namingconventions.7.0.2.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
