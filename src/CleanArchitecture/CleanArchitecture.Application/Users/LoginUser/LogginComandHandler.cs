@@ -1,4 +1,5 @@
 ﻿
+using CleanArchitecture.Application.Abstractions.Authentication;
 using CleanArchitecture.Application.Abstractions.Messaging;
 using CleanArchitecture.Domain.Abstractions;
 using CleanArchitecture.Domain.Users;
@@ -9,8 +10,9 @@ namespace CleanArchitecture.Application.Users.LoginUser
     internal sealed class LogginComandHandler : ICommandHandler<LoginCommand, string>
     {
         private readonly IUserRepository _userRepository;
+        private readonly IJwtProvider _jwtProvider;
 
-        public LogginComandHandler(IUserRepository userRepository)
+        public LogginComandHandler(IUserRepository userRepository, IJwtProvider jwtProvider)
         {
             _userRepository = userRepository;
         }
@@ -30,7 +32,8 @@ namespace CleanArchitecture.Application.Users.LoginUser
             }   
                 
             //Generar token
-
+            var token = await _jwtProvider.Generate(user);
+            return token;
 
         }
     }
