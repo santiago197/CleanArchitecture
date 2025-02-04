@@ -6,13 +6,13 @@ using CleanArchitecture.Domain.Vehiculos;
 
 namespace CleanArchitecture.Domain.Alquileres
 {
-    public sealed class Alquiler : Entity
+    public sealed class Alquiler : Entity<AlquilerId>
     {
         private Alquiler() { }
         public Alquiler(
-            Guid id,
-            Guid vehiculoID,
-            Guid userId,
+            AlquilerId id,
+            VehiculoId vehiculoID,
+            Users.UserId userId,
             DateRange duracion,
             Moneda precioPorPeriodo,
             Moneda mantenimiento,
@@ -31,14 +31,14 @@ namespace CleanArchitecture.Domain.Alquileres
             Status = status;
             FechaCreacion = fechaCreacion;
         }
-        public Guid VehiculoId { get; private set; }
-        public Guid UserId { get; private set; }
+        public VehiculoId? VehiculoId { get; private set; }
+        public Users.UserId? UserId { get; private set; }
         public Moneda? PrecioPorPeriodo { get; private set; }
         public Moneda? Mantenimiento { get; private set; }
         public Moneda? Accesorios { get; private set; }
         public Moneda? PrecioTotal { get; private set; }
-        public AlquilerStatus Status { get; private set; }
-        public DateRange Duracion { get; private set; }
+        public AlquilerStatus? Status { get; private set; }
+        public DateRange? Duracion { get; private set; }
         public DateTime? FechaCreacion { get; private set; }
         public DateTime? FechaConfirmacion { get; private set; }
         public DateTime? FechaCancelacion { get; private set; }
@@ -47,7 +47,7 @@ namespace CleanArchitecture.Domain.Alquileres
 
         public static Alquiler Reservar(
             Vehiculo vehiculo,
-            Guid userId,
+            Users.UserId userId,
             DateRange duracion,
             DateTime fechaCreacion,
             PrecioService precioService
@@ -58,8 +58,8 @@ namespace CleanArchitecture.Domain.Alquileres
                 duracion
             );
             var alquiler = new Alquiler(
-                Guid.NewGuid(),
-                vehiculo.Id,
+               AlquilerId.New(),
+                vehiculo.Id!,
                 userId,
                 duracion,
                 precioDetalle.PrecioPorPeriodo,
@@ -70,7 +70,7 @@ namespace CleanArchitecture.Domain.Alquileres
                 fechaCreacion
                 );
 
-            alquiler.RaiseDomainEvent(new AlquilerReservadoDomainEvent(alquiler.Id));
+            alquiler.RaiseDomainEvent(new AlquilerReservadoDomainEvent(alquiler.Id!));
             vehiculo.FechaUltimoAlquiler = fechaCreacion;
             return alquiler;
         }
@@ -84,7 +84,7 @@ namespace CleanArchitecture.Domain.Alquileres
             Status = AlquilerStatus.Confirmado;
             FechaConfirmacion = fechaConfirmacion;
 
-            RaiseDomainEvent(new AlquilerConfirmadoDomainEvent(Id));
+            RaiseDomainEvent(new AlquilerConfirmadoDomainEvent(Id!));
             return Result.Success();
 
         }
@@ -97,7 +97,7 @@ namespace CleanArchitecture.Domain.Alquileres
             Status = AlquilerStatus.Rechazado;
             FechaCancelacion = fechaCancelacion;
 
-            RaiseDomainEvent(new AlquilerRechazadoDomainEvent(Id));
+            RaiseDomainEvent(new AlquilerRechazadoDomainEvent(Id!));
             return Result.Success();
         }
         public Result Cancelar(DateTime fechaCancelacion)
@@ -107,14 +107,14 @@ namespace CleanArchitecture.Domain.Alquileres
                 return Result.Failure(AlquilerErrors.NotConfirmed);
             }
             var currentDate = DateOnly.FromDateTime(fechaCancelacion);
-            if(currentDate > Duracion.Inicio)
+            if (currentDate > Duracion!.Inicio)
             {
                 return Result.Failure(AlquilerErrors.AlreadyConfirmed);
             }
             Status = AlquilerStatus.Cancelado;
             FechaCancelacion = fechaCancelacion;
 
-            RaiseDomainEvent(new AlquilerRechazadoDomainEvent(Id));
+            RaiseDomainEvent(new AlquilerRechazadoDomainEvent(Id!));
             return Result.Success();
         }
         public Result Completar(DateTime utcNow)
@@ -126,7 +126,7 @@ namespace CleanArchitecture.Domain.Alquileres
             Status = AlquilerStatus.Completado;
             FechaCancelacion = utcNow;
 
-            RaiseDomainEvent(new AlquilerCompletadoDomainEvent(Id));
+            RaiseDomainEvent(new AlquilerCompletadoDomainEvent(Id!));
             return Result.Success();
         }
     }

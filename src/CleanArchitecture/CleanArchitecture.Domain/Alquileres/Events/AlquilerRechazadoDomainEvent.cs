@@ -3,6 +3,6 @@
 
 namespace CleanArchitecture.Domain.Alquileres.Events
 {
-    public sealed record AlquilerRechazadoDomainEvent(Guid id) : IDomainEvent;
+    public sealed record AlquilerRechazadoDomainEvent(AlquilerId id) : IDomainEvent;
     
 }

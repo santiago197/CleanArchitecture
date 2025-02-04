@@ -29,14 +29,14 @@ namespace CleanArchitecture.Application.Alquileres.ReservarAlquiler
                 return;
             }
 
-            var user = await _userRepository.GetByIdAsync(alquiler.UserId, cancellationToken);
+            var user = await _userRepository.GetByIdAsync(alquiler.UserId!, cancellationToken);
 
             if (user is null)
             {
                 return;
             }
 
-            await _emailService.SendAsync(user.Email, "Alquiler Reservado", $"Su alquiler {alquiler.Id} ha sido reservado exitosamente");     
+            await _emailService.SendAsync(user.Email!, "Alquiler Reservado", $"Su alquiler {alquiler.Id} ha sido reservado exitosamente");     
         }
     }
 

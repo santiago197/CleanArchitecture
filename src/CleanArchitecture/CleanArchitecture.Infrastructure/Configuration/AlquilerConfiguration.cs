@@ -15,6 +15,9 @@ namespace CleanArchitecture.Infrastructure.Configuration
             builder.ToTable("alquileres");
             builder.HasKey(alquiler => alquiler.Id);
 
+            builder.Property(alquiler => alquiler.Id)
+                .HasConversion(alquiler => alquiler!.Value, value => new AlquilerId(value));
+
             builder.OwnsOne(alquiler => alquiler.PrecioPorPeriodo, precioBuilder =>
             {
                 precioBuilder.Property(precio => precio.TipoMoneda)

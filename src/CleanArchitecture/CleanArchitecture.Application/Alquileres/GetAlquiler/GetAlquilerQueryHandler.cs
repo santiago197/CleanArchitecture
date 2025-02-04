@@ -43,7 +43,7 @@ namespace CleanArchitecture.Application.Alquileres.GetAlquiler
 
             var alquiler = await connection.QueryFirstOrDefaultAsync<AlquilerResponse>(sql, new { request.AlquilerId });
 
-            return alquiler;
+            return alquiler!;
         }
     }
 }
