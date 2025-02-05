@@ -60,7 +60,7 @@ C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\bi
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\bin\Debug\net8.0\CleanArchitecture.Api.deps.json
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\bin\Debug\net8.0\CleanArchitecture.Api.runtimeconfig.json
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\bin\Debug\net8.0\CleanArchitecture.Api.pdb
-C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net8.0\CleanArc.52FC81DF.Up2Date
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net8.0\CleanArchitecture.Api.genruntimeconfig.cache
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net8.0\ref\CleanArchitecture.Api.dll
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Api\obj\Debug\net8.0\CleanArchitecture.Api.csproj.CopyComplete
