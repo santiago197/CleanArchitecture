@@ -16,5 +16,10 @@ namespace CleanArchitecture.Infrastructure.Repositories
         {
             return await DbContext.Set<User>().FirstOrDefaultAsync(x => x.Email == Email, cancellationToken);   
         }
+
+        public async Task<bool> isUserExists(Domain.Users.Email Email, CancellationToken cancellationToken = default)
+        {
+            return await DbContext.Set<User>().AnyAsync(x => x.Email == Email, cancellationToken);
+        }
     }
 }

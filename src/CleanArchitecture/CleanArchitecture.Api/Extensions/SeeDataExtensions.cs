@@ -1,6 +1,8 @@
 using Bogus;
 using CleanArchitecture.Application.Abstractions.Data;
+using CleanArchitecture.Domain.Users;
 using CleanArchitecture.Domain.Vehiculos;
+using CleanArchitecture.Infrastructure;
 using Dapper;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,6 +10,47 @@ namespace CleanArchitecture.Api.Extensions
 {
     public static class SeedDataExtensions
     {
+        public static void SeedDataAuthentication(this IApplicationBuilder app)
+        {
+            using var scope = app.ApplicationServices.CreateScope();
+            var service = scope.ServiceProvider;
+            var loggerFactory = service.GetRequiredService<ILoggerFactory>();
+
+            try
+            {
+                var context = service.GetRequiredService<ApplicationDbContext>();
+                if (!context.Set<User>().Any())
+                {
+                    var passwordHash = BCrypt.Net.BCrypt.HashPassword("123456");
+
+                    var user = User.Create(
+                        new Nombre("Santiago"),
+                        new Apellidos("Rodriguez"),
+                        new Email("santiago.rodriguez19@outlook.com"),
+                        new PasswordHash(passwordHash)
+                        );
+                    context.Add(user);
+
+
+                    passwordHash = BCrypt.Net.BCrypt.HashPassword("123");
+                    user = User.Create(
+                            new Nombre("Admin"),
+                            new Apellidos("Admin"),
+                            new Email("admin@admin.com"),
+                            new PasswordHash(passwordHash)
+                            );
+
+                    context.Add(user);
+                    context.SaveChangesAsync().Wait();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                var logger = loggerFactory.CreateLogger<ApplicationDbContext>();
+                logger.LogError(ex.Message);
+            }
+        }
         public static void SeedData(this IApplicationBuilder app)
         {
             using var scope = app.ApplicationServices.CreateScope();
