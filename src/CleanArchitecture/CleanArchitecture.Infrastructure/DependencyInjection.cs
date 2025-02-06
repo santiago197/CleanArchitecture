@@ -24,8 +24,8 @@ namespace CleanArchitecture.Infrastructure
         {
             services.AddTransient<IDateTimeProvider, DateTimeProvider>();
             services.AddTransient<IEmailService, EmailService>();
-           
-            var connectionString = configuration.GetConnectionString("Database")
+
+            var connectionString = configuration.GetConnectionString("ConnectionString")
                 ?? throw new ArgumentNullException(nameof(configuration));
 
             services.AddDbContext<ApplicationDbContext>(options =>
