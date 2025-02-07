@@ -147,7 +147,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Microsoft.AspNetCore.OpenApi/8.0.4": {
+      "Microsoft.AspNetCore.OpenApi/8.0.0-rc.2.23480.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
@@ -1080,10 +1080,10 @@
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.OpenApi/8.0.4": {
-      "sha512": "TFiXbP0tqRgJKcpiCSSp79q6QaiF8gqRhZgrU48FQajhVkiwHSp1O1b1hkYC4Ehl4clbk3pHwdfwN9mRtDAFbQ==",
+    "Microsoft.AspNetCore.OpenApi/8.0.0-rc.2.23480.2": {
+      "sha512": "52ejkQxLMEqF7zW8DiT7nZoM0fcdbeFFGRsIVmXTFcZigx30ev8BISDZ58lRHWH+hdkDpVOFPiPRDHC/yjgA6A==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/8.0.4",
+      "path": "microsoft.aspnetcore.openapi/8.0.0-rc.2.23480.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1091,7 +1091,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll",
         "lib/net8.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.8.0.4.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.8.0.0-rc.2.23480.2.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
@@ -2563,11 +2563,10 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Bogus >= 34.0.0",
+      "Bogus >= 34.0.1",
       "CleanArchitecture.Application >= 1.0.0",
-      "CleanArchitecture.Domain >= 1.0.0",
       "CleanArchitecture.Infrastructure >= 1.0.0",
-      "Microsoft.AspNetCore.OpenApi >= 8.0.4",
+      "Microsoft.AspNetCore.OpenApi >= 8.0.0-rc.2.23480.2",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.11",
       "Swashbuckle.AspNetCore >= 6.4.0"
@@ -2604,9 +2603,6 @@
             "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj": {
               "projectPath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj"
             },
-            "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj": {
-              "projectPath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj"
-            },
             "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj": {
               "projectPath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj"
             }
@@ -2630,11 +2626,11 @@
         "dependencies": {
           "Bogus": {
             "target": "Package",
-            "version": "[34.0.0, )"
+            "version": "[34.0.1, )"
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[8.0.4, )"
+            "version": "[8.0.0-rc.2.23480.2, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -2675,17 +2671,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "CleanArchitecture.Api depende de Bogus (>= 34.0.0), pero no se encontró Bogus 34.0.0. Se resolvió una mejor coincidencia aproximada de Bogus 34.0.1.",
-      "libraryId": "Bogus",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }

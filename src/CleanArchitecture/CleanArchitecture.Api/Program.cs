@@ -22,7 +22,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddApplication();
-builder.Services.AddInfrastrcture(builder.Configuration);
+builder.Services.AddInfrastructure(builder.Configuration);
 
 
 var app = builder.Build();
@@ -33,7 +33,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.ApplyMigration();
+await app.ApplyMigration();
 app.SeedData();
 app.SeedDataAuthentication();
 

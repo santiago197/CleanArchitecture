@@ -10,9 +10,8 @@
         "dependencies": {
           "Bogus": "34.0.1",
           "CleanArchitecture.Application": "1.0.0",
-          "CleanArchitecture.Domain": "1.0.0",
           "CleanArchitecture.Infrastructure": "1.0.0",
-          "Microsoft.AspNetCore.OpenApi": "8.0.4",
+          "Microsoft.AspNetCore.OpenApi": "8.0.0-rc.2.23480.2",
           "Microsoft.EntityFrameworkCore.Design": "7.0.11",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.11",
           "Swashbuckle.AspNetCore": "6.4.0"
@@ -117,14 +116,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.OpenApi/8.0.4": {
+      "Microsoft.AspNetCore.OpenApi/8.0.0-rc.2.23480.2": {
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
         },
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "assemblyVersion": "8.0.4.0",
-            "fileVersion": "8.0.424.17014"
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.48002"
           }
         }
       },
@@ -552,12 +551,12 @@
       "path": "microsoft.aspnetcore.authentication.jwtbearer/8.0.0-rc.1.23421.29",
       "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.8.0.0-rc.1.23421.29.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.OpenApi/8.0.4": {
+    "Microsoft.AspNetCore.OpenApi/8.0.0-rc.2.23480.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TFiXbP0tqRgJKcpiCSSp79q6QaiF8gqRhZgrU48FQajhVkiwHSp1O1b1hkYC4Ehl4clbk3pHwdfwN9mRtDAFbQ==",
-      "path": "microsoft.aspnetcore.openapi/8.0.4",
-      "hashPath": "microsoft.aspnetcore.openapi.8.0.4.nupkg.sha512"
+      "sha512": "sha512-52ejkQxLMEqF7zW8DiT7nZoM0fcdbeFFGRsIVmXTFcZigx30ev8BISDZ58lRHWH+hdkDpVOFPiPRDHC/yjgA6A==",
+      "path": "microsoft.aspnetcore.openapi/8.0.0-rc.2.23480.2",
+      "hashPath": "microsoft.aspnetcore.openapi.8.0.0-rc.2.23480.2.nupkg.sha512"
     },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",

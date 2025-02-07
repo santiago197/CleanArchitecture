@@ -32,9 +32,6 @@
               "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj": {
                 "projectPath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj"
               },
-              "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj": {
-                "projectPath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj"
-              },
               "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj": {
                 "projectPath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj"
               }
@@ -58,11 +55,11 @@
           "dependencies": {
             "Bogus": {
               "target": "Package",
-              "version": "[34.0.0, )"
+              "version": "[34.0.1, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.0-rc.2.23480.2, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

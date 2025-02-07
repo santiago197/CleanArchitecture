@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qY4YnvPVkx0sO3S7bKcabPqjvHYV8L1NRHpzI4L7nYwD4FOxmnHztykRCO8QCM61hR1p3aJcOuB3J8MXG1EhqQ==",
+  "dgSpecHash": "+VESu8O15RSgaFlaZ9THe4EAWPTQETD3cblYR5CidobhmILVnx/9opEwTIIrql+7IIR+NFzu7ItXoNYk9Oj8Bg==",
   "success": true,
   "projectFilePath": "C:\\CodigoFuente\\CleanArchitecture\\src\\CleanArchitecture\\CleanArchitecture.Api\\CleanArchitecture.Api.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,7 @@
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0-rc.1.23421.29\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0-rc.1.23421.29.nupkg.sha512",
-    "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.4\\microsoft.aspnetcore.openapi.8.0.4.nupkg.sha512",
+    "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0-rc.2.23480.2\\microsoft.aspnetcore.openapi.8.0.0-rc.2.23480.2.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
@@ -58,16 +58,5 @@
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\santiago.rodriguez\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "CleanArchitecture.Api depende de Bogus (>= 34.0.0), pero no se encontró Bogus 34.0.0. Se resolvió una mejor coincidencia aproximada de Bogus 34.0.1.",
-      "libraryId": "Bogus",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

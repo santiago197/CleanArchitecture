@@ -54,8 +54,8 @@ namespace CleanArchitecture.Api.Extensions
         public static void SeedData(this IApplicationBuilder app)
         {
             using var scope = app.ApplicationServices.CreateScope();
-            var sqlConnecionFactory = scope.ServiceProvider.GetRequiredService<ISqlConnectionFactory>();
-            using var connection = sqlConnecionFactory.CreateConnection();
+        var sqlConnectionFactory = scope.ServiceProvider.GetRequiredService<ISqlConnectionFactory>();
+        using var connection = sqlConnectionFactory.CreateConnection();
 
             var faker = new Faker();
 

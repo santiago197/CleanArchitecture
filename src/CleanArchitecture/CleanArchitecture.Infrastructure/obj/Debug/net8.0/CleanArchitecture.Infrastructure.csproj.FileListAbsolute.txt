@@ -15,4 +15,4 @@ C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Infras
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Infrastructure\obj\Debug\net8.0\refint\CleanArchitecture.Infrastructure.dll
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Infrastructure\obj\Debug\net8.0\CleanArchitecture.Infrastructure.pdb
 C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Infrastructure\obj\Debug\net8.0\ref\CleanArchitecture.Infrastructure.dll
-C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Infrastructure\obj\Debug\net8.0\CleanArchitecture.Infrastructure.csproj.CopyComplete
+C:\CodigoFuente\CleanArchitecture\src\CleanArchitecture\CleanArchitecture.Infrastructure\obj\Debug\net8.0\CleanArc.38F44B56.Up2Date
