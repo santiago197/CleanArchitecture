@@ -15,6 +15,11 @@ namespace CleanArchitecture.Infrastructure.Configuration
             builder.HasKey(x => x.Id);
 
             builder.HasData(Role.GetValues());
+
+            builder.HasMany(x=> x.Permissions)
+                .WithMany()
+                .UsingE
+
         }
     }
 }

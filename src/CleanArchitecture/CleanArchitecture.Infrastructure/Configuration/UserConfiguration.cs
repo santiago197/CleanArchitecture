@@ -33,7 +33,7 @@ namespace CleanArchitecture.Infrastructure.Configuration
             builder.HasIndex(user => user.Email)
                 .IsUnique();
 
-            builder.HasMany(x => x.Roles).WithMany().UsingEntity<UserRole>();
+            builder.HasMany(x => x.Roles).WithMany().UsingEntity<UserRoleConfiguration>();
 
         }
     }
