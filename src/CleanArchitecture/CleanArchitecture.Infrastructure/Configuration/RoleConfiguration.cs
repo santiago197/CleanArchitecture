@@ -18,7 +18,7 @@ namespace CleanArchitecture.Infrastructure.Configuration
 
             builder.HasMany(x=> x.Permissions)
                 .WithMany()
-                .UsingE
+                .UsingEntity<RolePermission>();
 
         }
     }

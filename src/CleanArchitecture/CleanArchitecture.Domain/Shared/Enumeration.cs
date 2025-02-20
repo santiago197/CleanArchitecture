@@ -34,7 +34,7 @@ namespace CleanArchitecture.Domain.Shared
             return GetType() == other.GetType() && Id == other.Id;
         }
 
-        public override bool E(object? obj)
+        public override bool Equals(object? obj)
         {
             return obj is Enumeration<TEnum> other && Equals(other);
         }

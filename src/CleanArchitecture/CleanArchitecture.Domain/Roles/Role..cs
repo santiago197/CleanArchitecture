@@ -1,5 +1,4 @@
 ﻿
-using CleanArchitecture.Domain.Permissions;
 using CleanArchitecture.Domain.Shared;
 
 namespace CleanArchitecture.Domain.Roles;
@@ -13,6 +12,6 @@ public sealed class Role : Enumeration<Role>
     {
     }
 
-    public ICollection<Permissions>? Permissions { get; set; }
+    public ICollection<Domain.Permissions.Permission>? Permissions { get; set; }
 
 }
